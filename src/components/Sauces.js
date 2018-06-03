@@ -2,22 +2,7 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { sauces } from '../constants'
 import { changeSauce } from '../actions'
-import styled from 'styled-components'
-
-const Input = styled.div`
-  display: flex;
-  margin: 0.5rem;
-  justify-content: space-between;
-  align-items: baseline;
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    > input {
-      margin-right: 1rem;
-    }
-  }
-`
+import { Input } from '../styles'
 
 class SaucesBox extends PureComponent {
   constructor(props) {
@@ -41,7 +26,7 @@ class SaucesBox extends PureComponent {
   render() {
     return (
       <div>
-        <h3>Select a sauce:</h3>
+        <h3>2. Select a sauce:</h3>
         <form>
           {sauces.map(sauce => {
             return (

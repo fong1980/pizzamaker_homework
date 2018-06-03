@@ -2,30 +2,7 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { toppings } from '../constants'
 import { changeToppings } from '../actions'
-import styled from 'styled-components'
-
-const Input = styled.div`
-  display: flex;
-  margin: 0.5rem;
-  justify-content: space-between;
-  align-items: baseline;
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    > input {
-      margin-right: 1rem;
-    }
-  }
-`
-
-const Warning = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 0.5rem;
-  background-color: red;
-  color: white;
-`
+import { Input, Warning } from '../styles'
 
 class ToppingsBox extends PureComponent {
   constructor(props) {
@@ -58,7 +35,7 @@ class ToppingsBox extends PureComponent {
   render() {
     return (
       <div>
-        <h3>Select some toppings for 0.50 each (max. 3)</h3>
+        <h3>3. Choose toppings (0.50 each, max. 3):</h3>
         <form>
           {toppings.map(topping => {
             return (

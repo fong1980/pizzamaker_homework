@@ -1,4 +1,4 @@
-import { ADD_BASE, ADD_SAUCE, ADD_TOPPINGS } from '../actions'
+import { ADD_BASE, ADD_SAUCE, ADD_TOPPINGS, ADD_DRONE } from '../actions'
 
 export default function(state, { type, payload }) {
   switch (type) {
@@ -8,6 +8,8 @@ export default function(state, { type, payload }) {
       return { ...state, sauce: payload }
     case ADD_TOPPINGS:
       return { ...state, toppings: payload }
+    case ADD_DRONE:
+      return { ...state, drone: payload }
     default:
       return {
         base: {
@@ -18,7 +20,8 @@ export default function(state, { type, payload }) {
           name: 'White sauce',
           price: 0.0
         },
-        toppings: []
+        toppings: [],
+        drone: false
       }
   }
 }

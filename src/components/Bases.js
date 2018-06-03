@@ -2,22 +2,7 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { bases } from '../constants'
 import { changeBase } from '../actions'
-import styled from 'styled-components'
-
-const Input = styled.div`
-  display: flex;
-  margin: 0.5rem;
-  justify-content: space-between;
-  align-items: baseline;
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    > input {
-      margin-right: 1rem;
-    }
-  }
-`
+import { Input } from '../styles'
 
 class BasesBox extends PureComponent {
   constructor(props) {
@@ -41,7 +26,7 @@ class BasesBox extends PureComponent {
   render() {
     return (
       <div>
-        <h3>Select a base:</h3>
+        <h3>1. Select a base:</h3>
         <form>
           {bases.map(base => {
             return (

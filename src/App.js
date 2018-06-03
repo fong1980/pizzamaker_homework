@@ -3,19 +3,8 @@ import TotalBox from './components/Total'
 import BasesBox from './components/Bases'
 import SaucesBox from './components/Sauces'
 import ToppingsBox from './components/Toppings'
-import styled from 'styled-components'
-
-const AppWrapper = styled.div`
-  font-family: 'Assistant', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  > div {
-    display: flex;
-    max-width: 960px;
-    justify-content: space-between;
-  }
-`
+import DroneBox from './components/Drone'
+import { AppWrapper, OptionsWrapper, TotalWrapper } from './styles'
 
 class App extends Component {
   render() {
@@ -23,14 +12,15 @@ class App extends Component {
       <AppWrapper>
         <h1>Pizza Configurator</h1>
         <div>
-          <div>
+          <OptionsWrapper>
             <BasesBox />
             <SaucesBox />
             <ToppingsBox />
-          </div>
-          <div>
+            <DroneBox />
+          </OptionsWrapper>
+          <TotalWrapper>
             <TotalBox />
-          </div>
+          </TotalWrapper>
         </div>
       </AppWrapper>
     )
