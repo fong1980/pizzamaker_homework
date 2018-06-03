@@ -1,5 +1,13 @@
 import styled from 'styled-components'
 
+export const Wrapper = styled.div`
+  display: flex;
+  width: 95vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-self: auto;
+`
+
 export const AppWrapper = styled.div`
   font-family: 'Source Code Pro', monospace;
   display: flex;
