@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "pizzamaker_homework",
+  "name": "Adam Belton Pizza-Maker Homework",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "pizza.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
